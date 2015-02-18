@@ -1,0 +1,22 @@
+ru:
+  login: Войти
+  logout: Выйти
+  activerecord:
+    models:
+      shipment:
+        one: Посылка
+        few: Посылки
+        many: Посылок
+        other: Посылки
+    attributes:
+      shipment:
+        mail_id: Почтовый идентификатор
+        created_at: Дата создания
+  helpers:
+    actions: Действия
+    links:
+      new: Добавить
+      edit: Редактировать
+      destroy: Удалить
+      cancel: Отмена
+      back: Назад

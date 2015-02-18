@@ -1,0 +1,13 @@
+= link_to asset_path("rails.png"), :class => "fancybox", :id => "logo" do
+  = image_tag "rails.png"
+= form_tag sessions_path, :html => { :class => "form-horizontal" } do
+  .control-group
+    = label_tag "Email", nil, :class => 'control-label'
+    .controls
+      = text_field_tag :email, nil, :class => 'text_field'
+  .control-group
+    = label_tag "Password", nil, :class => 'control-label'
+    .controls
+      = password_field_tag :password, nil, :class => 'text_field'
+  .form-actions
+    = submit_tag t('login'), :class => 'btn btn-primary'

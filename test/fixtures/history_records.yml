@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  shipment: 
+  operation_date: 2015-02-13
+  operation_type: MyString
+
+two:
+  shipment: 
+  operation_date: 2015-02-13
+  operation_type: MyString

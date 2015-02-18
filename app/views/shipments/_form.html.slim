@@ -1,0 +1,13 @@
+= form_for @shipment, :html => { :class => "form-horizontal" } do |f|
+  - unless @shipment.errors.blank?
+    ul
+      - @shipment.errors.full_messages.each do |error_message|
+        li = error_message
+  .control-group
+    = f.label :mail_id, :class => 'control-label'
+    .controls
+      = f.text_field :mail_id, :class => 'text_field'
+  .form-actions
+    = f.submit nil, :class => 'btn btn-primary'
+    '
+    = link_to t('.cancel', :default => t("helpers.links.cancel")), shipments_path, :class => 'btn'
