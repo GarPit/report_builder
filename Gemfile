@@ -36,10 +36,17 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
-# Deploy with Capistrano
-# gem 'capistrano'
+group :development do
+  # Deploy with Capistrano
+  gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
+  gem 'capistrano-rails'
+end
 
 # To use debugger
 #gem 'ruby-debug'
+gem "foreman"
+gem "foreman-export-initscript", :github => "webgradus/foreman-export-initscript"
