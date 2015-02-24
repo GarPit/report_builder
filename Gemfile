@@ -44,6 +44,7 @@ group :development do
   gem 'capistrano-bundler'
   gem 'capistrano-rvm'
   gem 'capistrano-rails'
+  gem 'thin'
 end
 
 # To use debugger

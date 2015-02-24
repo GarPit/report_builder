@@ -3,6 +3,7 @@ class ShipmentsController < ApplicationController
 
   def index
     @shipments = Shipment.all
+    @shipment = Shipment.new
   end
 
   def new
@@ -15,11 +16,7 @@ class ShipmentsController < ApplicationController
 
   def create
     @shipment = Shipment.new(params[:shipment])
-    if @shipment.save
-      redirect_to shipment_path(@shipment)
-    else
-      render :new
-    end
+    @shipment.save
   end
 
   def show

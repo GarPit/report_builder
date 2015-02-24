@@ -1,0 +1,7 @@
+tr
+  td= link_to shipment.mail_id, shipment_path(shipment)
+  td=l shipment.created_at, :format => "%B %Y"
+  td
+    = link_to t('.edit', :default => t("helpers.links.edit")), edit_shipment_path(shipment), :class => 'btn btn-mini'
+    '
+    = link_to t('.destroy', :default => t("helpers.links.destroy")), shipment_path(shipment), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-mini btn-danger'

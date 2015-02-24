@@ -1,4 +1,4 @@
-= form_for @shipment, :html => { :class => "form-horizontal" } do |f|
+= form_for @shipment, :remote => true, :html => { :class => "form-horizontal" } do |f|
   - unless @shipment.errors.blank?
     ul
       - @shipment.errors.full_messages.each do |error_message|
